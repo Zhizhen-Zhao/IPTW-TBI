@@ -15,4 +15,9 @@ In addition, we conducted a case study to evaluate the effect of ICP monitoring 
 ## 2. Datasets
 Benchmark datasets can be found at https://github.com/AMLab-Amsterdam/CEVAE/tree/master/datasets.
 
-NTDB dataset can be requested at https://www.facs.org/quality-programs/trauma/tqp/center-programs/ntdb.
+NTDB dataset can be requested at https://www.facs.org/quality-programs/trauma/tqp/center-programs/ntdb. Variable descriptions are included. 
+In our case study, 18 pre-treatment covariates were selected and their missing ratios in the original dataset is shown in Figure 2. 
+
+![prop%20of%20missing%20data](https://user-images.githubusercontent.com/79823323/158081292-a3a7ec72-1949-406d-ad7d-b52d0faa7445.png)
+
+Figure 2: Proportion of missing values in NTDB dataset.
