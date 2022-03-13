@@ -6,6 +6,7 @@ library(MatchThem)
 set.seed(1234)
 write(sample(1:10000000,size=1000),file="seeds.txt",ncolumns=1)
 seeds = read.table("seeds.txt",header=F)$V1
+# other datasets can be performed in the same way
 ihdp = read.csv('ihdp_cleaned.csv')
 ihdp_cov = ihdp[,2:26]
 covariate_name = colnames(ihdp_cov)
