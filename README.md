@@ -16,8 +16,30 @@ In addition, we conducted a case study to evaluate the effect of ICP monitoring 
 Benchmark datasets can be found at https://github.com/AMLab-Amsterdam/CEVAE/tree/master/datasets.
 
 NTDB dataset can be requested at https://www.facs.org/quality-programs/trauma/tqp/center-programs/ntdb. Variable descriptions are included. 
-In our case study, 18 pre-treatment covariates were selected and their missing ratios in the original dataset is shown in Figure 2. 
+In our case study, 18 pre-treatment covariates were selected. Covariates description and their missing ratios in the original dataset are shown in Table 1. 
 
-![prop%20of%20missing%20data](https://user-images.githubusercontent.com/79823323/158081292-a3a7ec72-1949-406d-ad7d-b52d0faa7445.png)
 
-Figure 2: Proportion of missing values in NTDB dataset.
+
+
+| Covariate     | Description   | Type          | Missing Rate (%) |
+| ------------- | ------------- | ------------- | ------------- |
+| AGEYears      | Age (years)  | Continuous | 2.84  |
+| TRANSPORTMODE   | Transport Mode  | Categorical | 0.46  |
+| EMSSBP      | Initial EMS Systolic Blood Pressure  | Continuous  | 37.09  |
+| EMSPULSERATE   | Initial EMS Pulse Rate | Continuous  | 32.93|
+| EMSTOTALGCS      | EMS Total GCS  | Continuous  | 32.60  |
+| EMSMins  | Time from dispatch to ED/hospital arrival (mins)  | Continuous  | 19.69  |
+|INTERFACILITYTRANSFER       |Inter-Facility Transfer  |  Binary  | 0 |
+| EDMins   | Total time between ED/hospital arrival and ED discharge (mins) | Continuous  | 7.15  |
+| SBP      | Systolic Blood Pressure | Continuous  | 1.57  |
+| PULSERATE   | Pulse Rate  | Continuous | 1.06  |
+| RESPIRATORYRATE      | Respiratory Rate  | Continuous  | 5.77  |
+| RESPIRATORYASSISTANCE   | Respiratory Assistance |Binary  | 3.17  |
+| TOTALGCS      | Total GCS  | Continuous | 0  |
+| TBIMIDLINESHIFT  | Midline Shift | Categorical  | 1.23  |
+| BLOOD4HOURS    | Transfusion Blood (4 Hours)  | Continuous  | 0.05 |
+| HOSPITALTYPE      | Hospital Type  | Categorical  | 0.25  |
+| BEDSIZE  | Bed size |Continuous  | 0  |
+| VERIFICATIONLEVEL  | ACS Verification Level  | Categorical | 24.73  |
+
+Table 1: Full list of covariates
